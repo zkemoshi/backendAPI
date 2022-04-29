@@ -172,7 +172,7 @@ const resetPassword = asyncHandler(async (req, res) => {
       throw new Error('Reset password Error');
     }
 
-    res.status(200).json({ message: 'Your passsword has been Changed' });
+    res.status(200).json({ message: 'Your password has been Changed' });
   } else {
     res.status(401);
     throw new Error('No Reset Link');
